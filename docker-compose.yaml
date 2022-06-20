@@ -2,7 +2,7 @@ version: '3.8'
 networks: # to create a custom bridge
   yasminbr111: 
 services:
-  ashuapp007:
+  yasmin007:
     image: yasminciapp:v1 
     build: . 
     container_name: yasmincic1
