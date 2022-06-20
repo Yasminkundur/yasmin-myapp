@@ -1,0 +1,13 @@
+version: '3.8'
+networks: # to create a custom bridge
+  yasminbr111: 
+services:
+  ashuapp007:
+    image: yasminciapp:v1 
+    build: . 
+    container_name: yasmincic1
+    ports:
+    - "1111:80"
+    restart: always 
+    networks: # use bridge created above 
+    - yasminbr111 
